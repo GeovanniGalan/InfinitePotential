@@ -3,96 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Personal Website</title>
+    <title>Infinite Potential</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <!-- Navigation Section -->
-    <nav>
-      <div class="logo">
-        <img src="img/infinitePotential.png" alt="Logo" />
-        <h2>Infinite Potential</h2>
-      </div>
-      <div class="nav-links">
-        <a href="#">Subscribe</a>
-        <a href="#">Like</a>
-      </div>
-    </nav>
 
-    <!-- Causes Section -->
-    <!-- Main Content Section -->
-    <section class="main-content">
-      <div class="mission-vision">
-        <div class="mission">
-          <h2>Mission Statement</h2>
-          <p>Our mission is to...</p>
-        </div>
-        <div class="vision">
-          <h2>Vision Statement</h2>
-          <p>Our vision is to.</p>
-        </div>
-      </div>
-      <h1>Welcome to My Personal Website</h1>
-      <div class="like-subscribe">
-        <button class="like-button">Like</button>
-        <button class="subscribe-button">Subscribe</button>
-      </div>
-      <div class="causes-wrapper hide">
-        <div class="search">
-          <input type="text" placeholder="Search Causes" />
-          <button>Search</button>
-        </div>
-        <ul class="causes">
-          <li>
-            <a href="#">
-              <h3>Cause A</h3>
-              <p>Description of Cause A.</p>
-              <span class="like-count">0 Likes</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <h3>Cause B</h3>
-              <p>Description of Cause B.</p>
-              <span class="like-count">0 Likes</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <h3>Cause C</h3>
-              <p>Description of Cause C.</p>
-              <span class="like-count">0 Likes</span>
-            </a>
-          </li>
-          <!-- rest of the causes list -->
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="create-cause">
-          <h2>Create a New Cause</h2>
-          <form>
-            <div class="form-control">
-              <label for="cause-name">Cause Name:</label>
-              <input type="text" id="cause-name" name="cause-name" required />
-            </div>
-            <div class="form-control">
-              <label for="cause-description">Cause Description:</label>
-              <textarea
-                id="cause-description"
-                name="cause-description"
-                required
-              ></textarea>
-            </div>
-            <button class="create-button">Create</button>
-          </form>
+      </nav>
+    </header>
+
+    <section id="hero" class="black-theme">
+      <div class="hero-content">
+        <h1 class="glowing-text">Unleash the Power of Collective Investment</h1>
+        <div id="scrolling-menu">
+          <ul>
+            <li>News 1</li>
+            <li>News 2</li>
+            <li>News 3</li>
+            <li>News 4</li>
+            <li>News 5</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-      <p>© 2023 Infinite Potential</p>
+    <section id="about" class="black-theme">
+      <div class="container">
+        <h2>About Infinite Potential</h2>
+        <p>
+          Place an engaging and descriptive paragraph about your company here.
+        </p>
+      </div>
+    </section>
+
+    <section id="video" class="black-theme">
+      <div class="container">
+        <h2>Learn How Infinite Potential Works</h2>
+        <div class="video-player">
+          <!-- Embed your video here -->
+          <iframe
+            src="https://www.youtube.com/embed/yourvideo"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="black-theme">
+      <div class="container">
+        <h2>Our Innovative Features</h2>
+        <div class="feature-card">
+          <img src="icon1.png" alt="Feature Icon" />
+          <h3>Transparent Funding</h3>
+          <p>Description of the feature.</p>
+        </div>
+        <!-- Repeat feature cards for other features -->
+      </div>
+    </section>
+
+    <section id="projects" class="black-theme">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-card">
+          <img src="project1.png" alt="Project Image" />
+          <h3>Project Title</h3>
+          <p>Description of the project.</p>
+        </div>
+        <!-- Repeat project cards for other projects -->
+      </div>
+    </section>
+
+    <section id="how-it-works" class="black-theme">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="step">
+          <h3>Step 1: Sign Up</h3>
+          <p>Describe the sign-up process here.</p>
+        </div>
+        <!-- Repeat explanation steps for other steps -->
+      </div>
+    </section>
+
+    <section id="faq" class="black-theme">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+          <div class="question">
+            <h3>Question 1?</h3>
+            <p>Answer to Question 1.</p>
+          </div>
+          <!-- Repeat question and answer for other FAQs -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="black-theme futuristic-contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-description">We'd love to hear from you!</p>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="black-theme">
+      <div class="container">
+        <p>&copy; 2023 Infinite Potential. All rights reserved.</p>
+      </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="scripts.js"></script>
   </body>
 </html>
